@@ -113,6 +113,6 @@ font-weight: 600;
 }
 @media only screen and (hover: none) and (pointer: coarse){
   #root{
-    margin: 300px 0 20px;
+    margin: 400px 0 20px;
   }
 }
