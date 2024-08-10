@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Kufi+Arabic:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Kufi+Arabic:wght@100..900&display=swap");
+html {
+  background-color: #f6eae3;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  
+}
+
+.imageBox {
+  min-width: 50%;
+ 
+  background-image: url("image-product-desktop.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.productData{
+  padding:  40px;
+  display: flex;
+  flex-direction: column;
+  min-width: 210px;
+  gap: 30px;
+}
+.productData h4 {
+  margin: 0 ;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #7A7B82;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.productData h1 {
+  margin: 0;
+  font-size: 45px;
+  font-weight: 900;
+  font-family: "Fraunces", sans-serif;
+}
+
+.productData p {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;  
+  font-size: 14px;
+  font-weight: 600;
+  color: #7A7B82;
+  line-height: 25px;
+}
+.productData .price{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+.productData .priceNow{
+  font-family: "Fraunces", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #0E816A;
+}
+.productData .priceThen{
+  font-size: 15px;
+  color: #7A7B82;
+text-decoration: line-through;
+font-weight: 600;
+}
+.btn {
+  background-color: #0E816A;
+  padding:  5%;
+  border: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  color: white;
+}
+.btn:hover{
+  cursor: pointer;
+  background-color: #004032;
+}
+@media screen and (max-width:500px) {
+  .imageBox{
+   
+    height: 300px;
+    background-image: url("image-product-mobile.jpg");
+  }
+ #root{
+  flex-direction: column;
+ } 
+}
