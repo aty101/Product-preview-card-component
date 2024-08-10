@@ -12,7 +12,7 @@ html {
   display: flex;
   flex-direction: row;
   background-color: white;
-  
+    
 }
 
 .imageBox {
@@ -93,10 +93,26 @@ font-weight: 600;
 @media screen and (max-width:500px) {
   .imageBox{
    /* max-width: 100%; */
-    height: 300px;
+    min-height: 40vh;
+    /* margin-top: 200px; */
     background-image: url("/image-product-mobile.jpg");
+    background-position:center;
+    
+  background-size: cover;
   }
  #root{
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 200px;
   flex-direction: column;
- } 
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+} 
+}
+@media only screen and (hover: none) and (pointer: coarse){
+  #root{
+    margin: 300px 0 20px;
+  }
 }
